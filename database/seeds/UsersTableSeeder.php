@@ -15,6 +15,8 @@ class UsersTableSeeder extends Seeder
         
         DB::table('users')->insert([
             'name' => 'Admin',
+            'first_name'=>'admin',
+            'last_name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('admin123'),
             'created_at' =>  date("Y-m-d H:i:s")
@@ -25,6 +27,8 @@ class UsersTableSeeder extends Seeder
 
         DB::table('users')->insert([
             'name' => 'Staff',
+            'first_name'=>'nhan',
+            'last_name' => 'vien',
             'email' => 'nhanvien@gmail.com',
             'password' => bcrypt('admin123'),
             'created_at' =>  date("Y-m-d H:i:s")
@@ -34,6 +38,8 @@ class UsersTableSeeder extends Seeder
 
         DB::table('users')->insert([
             'name' => 'client ',
+            'first_name'=>'client',
+            'last_name' => '1',
             'email' => 'client@gmail.com',
             'password' => bcrypt('admin123'),
             'created_at' =>  date("Y-m-d H:i:s")
@@ -45,6 +51,8 @@ class UsersTableSeeder extends Seeder
 
         DB::table('users')->insert([
             'name' => 'Duc Bui',
+            'first_name'=>'Duc',
+            'last_name' => 'Bui',
             'email' => 'duc@gmail.com',
             'password' => bcrypt('admin123'),
             'created_at' =>  date("Y-m-d H:i:s")
